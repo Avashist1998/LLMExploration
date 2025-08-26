@@ -1,0 +1,28 @@
+[workspace]
+channels = ["conda-forge"]
+name = "number-generation-analysis"
+version = "0.1.0"
+platforms = ["osx-arm64"]
+description = "AI Model Number Generation Analysis Tool"
+authors = ["Your Name <your.email@example.com>"]
+
+
+[dependencies]
+python = "3.11.*"
+openai = "1.95.*"
+matplotlib = "3.10.*"
+seaborn = "0.13.*"
+numpy = "2.3.*"
+pandas = "2.3.*"
+python-dotenv = "1.0.*"
+scipy = "1.16.*"
+
+[activation]
+scripts = ["setup.sh"]
+
+[tasks]
+test = "python test_setup.py"
+quick = "python main.py --quick"
+full = "python main.py"
+example = "python example_analysis.py"
+plot = "python plot_results.py" 
