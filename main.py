@@ -15,6 +15,7 @@ MODELS = [
     "gpt-4.1-mini",
     "gpt-4.1",
     "claude-3-5-haiku-20241022",
+    "claude-3-7-sonnet-20250219",
     "claude-sonnet-4-20250514",
 ]
 
@@ -27,7 +28,7 @@ def main():
     print("=" * 50)
 
     # Configuration
-    model = MODELS[3]  # You can change this to other models like "gpt-4"
+    model = MODELS[-1]  # You can change this to other models like "gpt-4"
 
     # Define the ranges to test
     ranges = [
