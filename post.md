@@ -105,7 +105,7 @@ prompts = {
 
 ![](https://raw.githubusercontent.com/Avashist1998/LLMExploration/refs/heads/main/plots/claude-3-5-haiku-200-sample-5-trials/bias_analysis.png)
 
-#### Claude 4 Sonnet
+#### Claude 3.7 Sonnet
 
 ---
 
