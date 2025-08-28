@@ -16,7 +16,7 @@ MODELS = [
     "gpt-4.1",
     "claude-3-5-haiku-20241022",
     "claude-3-7-sonnet-20250219",
-    "claude-sonnet-4-20250514",
+    # "claude-sonnet-4-20250514",
 ]
 
 
@@ -123,7 +123,7 @@ def main():
         # Save results
         print(f"\n💾 Saving results...")
         analyzer.save_results(
-            results, analysis, f"/results/analysis_results_{model}.json"
+            results, analysis, f"results/analysis_results_{model}.json"
         )
 
         print(f"\n✅ Analysis completed successfully!")
@@ -154,7 +154,7 @@ def run_quick_test():
     print("=" * 30)
 
     # model = "gpt-4.1"
-    model = MODELS[3]
+    model = MODELS[-1]
     ranges = [(0.0, 1.0), (1.0, 10.0), (-1.0, 1.0)]
     samples_per_range = 20
     runs = 2
